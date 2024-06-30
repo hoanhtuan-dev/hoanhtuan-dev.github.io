@@ -1,1 +1,93 @@
-.h1 { font-size: 3rem; font-weight: 600; color: red }
+@import url(base.css);
+@import url(media.css);
+@import url(options.css);
+@import url(typebase.css);
+@import url(components.css);
+
+:root[data-theme="dark"] {
+    --color-primary: #e500ff;
+    --color-primary-content: #120016;
+    --color-secondary: #00c400;
+    --color-secondary-content: #000e00;
+    --color-accent: #008500;
+    --color-accent-content: #d3e7d1;
+    --color-neutral: #15030a;
+    --color-neutral-content: #cbc5c7;
+    --color-base-100: #302b20;
+    --color-base-200: #28241a;
+    --color-base-300: #211d15;
+    --color-base-content: #d1d0cd;
+    --color-info: #00a8ff;
+    --color-info-content: #000a16;
+    --color-success: #00c876;
+    --color-success-content: #000f05;
+    --color-warning: #a88700;
+    --color-warning-content: #0a0600;
+    --color-error: #ff4d56;
+    --color-error-content: #160202;
+}
+
+:root[data-theme="light"] {
+    --color-primary: #ff00b7;
+    --color-primary-content: #16000c;
+    --color-secondary: #00ff40;
+    --color-secondary-content: #001601;
+    --color-accent: #7f3700;
+    --color-accent-content: #e7d5cc;
+    --color-neutral: #090b0f;
+    --color-neutral-content: #c6c7c8;
+    --color-base-100: #e4ffff;
+    --color-base-200: #c6dede;
+    --color-base-300: #a9bebe;
+    --color-base-content: #121616;
+    --color-info: #00cbea;
+    --color-info-content: #000f13;
+    --color-success: #008637;
+    --color-success-content: #d3e7d6;
+    --color-warning: #fdb600;
+    --color-warning-content: #160c00;
+    --color-error: #ff3063;
+    --color-error-content: #160103;
+}
+
+:root {
+    --navbar-h: 70px;
+    --nav-list-w: 90px;
+}
+
+/*--------- Html ---------*/
+
+/*--------- Body ---------*/
+body {
+    background-color: var(--color-base-100);
+    color: var(--color-base-content);
+}
+
+/*--------- Header ---------*/
+
+/* Navbar */
+.navbar {
+    height: var(--navbar-h);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: auto;
+    height: calc(var(--navbar-h) - 12px);
+}
+
+.navbar ul {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+
+    li a {
+
+        display: flex;
+        column-gap: .25rem;
+        align-items: center;
+
+    }
+}

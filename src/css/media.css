@@ -1,0 +1,73 @@
+.container { width: 100%; }
+.container-lg { width: 100%; }
+
+/* Điện thoại */
+@media (max-width: 640px) {
+
+  .container { 
+    padding-left: var(--container-pd-x);
+    padding-right: var(--container-pd-x);
+  }
+
+  .container-lg { 
+    padding-left: var(--container-pd-x);
+    padding-right: var(--container-pd-x);
+  }
+
+}
+
+@media (min-width: 640px) {
+
+  .container { 
+    max-width: 640px; 
+    /* padding-left: var(--container-pd-x); */
+    /* padding-right: var(--container-pd-x); */
+  }
+
+  .container-lg { 
+    max-width: 640px; 
+    padding-left: var(--container-pd-x);
+    padding-right: var(--container-pd-x);
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .container { max-width: 768px; }
+  .container-lg { max-width: 768px; }
+
+}
+
+@media (min-width: 960px) {
+
+  .container { max-width: 960px; }
+  .container-lg { max-width: 960px; }
+
+}
+
+@media (min-width: 1024px) {
+
+  .container { max-width: 1024px; }
+  .container-lg { max-width: 1024px; }
+
+}
+
+@media (min-width: 1248px) {
+
+  .container-lg {
+    max-width: 1248px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container-lg {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container-lg {
+    max-width: 1536px;
+  }
+}

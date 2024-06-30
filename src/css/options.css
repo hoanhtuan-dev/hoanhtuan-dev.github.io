@@ -1,0 +1,8 @@
+html[data-theme='light'] { & body { transition: background-color ease-in 0.9s; color ease-out 0.9s } }
+html[data-theme='dark'] { & body { transition: background-color ease-in 0.9s; color ease-in 0.9s } }
+
+html {
+    scroll-behavior: smooth;
+}
+
+[x-cloak] { display: none !important; }

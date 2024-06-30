@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+<html lang="vi" data-theme="dark">
 
-    <div class="container app mx-auto">
-      
-      <!-- Header -->
-      <header class="app container mx-auto">
-        <h1 class="h1 supper-center">Anh Tuấn Dev</h1>
-        <ul>
-          <li class="nav-item">
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./src/remixicon/remixicon.css" rel="stylesheet">
+  <link href="./src/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- Header -->
+    <header class="container mx-auto">
+      <div class="navbar">
+        <div class="logo">
+          <img src="src/img/avatar.png" alt="">
+        </div>
+        <ul class="lists">
+          <li class="list">
             <a href="#">
-              <label for="#01">Trang chính</label>
+              <span class="icon">
+                <i class="ri-home-4-line"></i>
+              </span>
+              <span class="text">Trang chính</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="list">
             <a href="#">
-              <label for="#01">Công nghệ</label>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#">
-              <label for="#01">Thành thạo</label>
+              <span class="icon"><i class="ri-user-line"></i></span>
+              <span class="text">Giới Thiệu</span>
             </a>
           </li>
         </ul>
-      </header>
+      </div>
+    </header>
 
-      <section class="featured">
-        <div class="featured-container">
-          <h2 class="section-tittle">Featured</h2>
-        </div>
-      </section>
+    <section class="featured container mx-auto">
+      <div class="featured-container">
+        <h2 class="section-tittle">Featured</h2>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="footer">
-        Footer
-      </footer>
-      
-    </div>
-  
-  </body>
+    <section class="featured container mx-auto">
+      <div class="featured-container">
+        <h2 class="section-tittle">Components</h2>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container mx-auto">
+      Footer
+    </footer>
+
+  </div>
+
+</body>
+
 </html>

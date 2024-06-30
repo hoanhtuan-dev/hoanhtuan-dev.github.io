@@ -1,0 +1,10 @@
+:root {
+  --container-pd-x : 1.25rem;
+  --scrollbar-w : 0.5rem;
+}
+
+/* C */
+
+/* M */
+.mx-auto { margin-left: auto; margin-right: auto; }
+
