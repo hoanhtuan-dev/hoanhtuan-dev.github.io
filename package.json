@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@types/live-server": "^1.2.3"
+  }
+}

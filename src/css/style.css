@@ -5,17 +5,17 @@
 @import url(components.css);
 
 :root[data-theme="dark"] {
-    --color-primary: #e500ff;
+    --color-primary: hsla(317, 100%, 50%, 1);
     --color-primary-content: #120016;
-    --color-secondary: #00c400;
+    --color-secondary: hsla(120, 100%, 38%, 1);
     --color-secondary-content: #000e00;
     --color-accent: #008500;
     --color-accent-content: #d3e7d1;
     --color-neutral: #15030a;
     --color-neutral-content: #cbc5c7;
-    --color-base-100: #302b20;
-    --color-base-200: #28241a;
-    --color-base-300: #211d15;
+    --color-base-100: hsla(41, 20%, 16%, 1);
+    --color-base-200: hsla(43, 21%, 13%, 1);
+    --color-base-300: hsla(40, 22%, 11%, 1);
     --color-base-content: #d1d0cd;
     --color-info: #00a8ff;
     --color-info-content: #000a16;
@@ -28,9 +28,9 @@
 }
 
 :root[data-theme="light"] {
-    --color-primary: #ff00b7;
+    --color-primary: hsla(317, 100%, 50%, 1);
     --color-primary-content: #16000c;
-    --color-secondary: #00ff40;
+    --color-secondary: hsla(120, 100%, 38%, 1);
     --color-secondary-content: #001601;
     --color-accent: #7f3700;
     --color-accent-content: #e7d5cc;
@@ -53,19 +53,30 @@
 :root {
     --navbar-h: 70px;
     --nav-list-w: 90px;
+    --section-title-fs: 2.5rem;
+    --section-title-fw: 600;
 }
 
-/*--------- Html ---------*/
+/* ---------------------|
+|         Html          |
+|--------------------- */
 
-/*--------- Body ---------*/
+/* ---------------------|
+|         Body          |
+|--------------------- */
 body {
     background-color: var(--color-base-100);
     color: var(--color-base-content);
 }
 
-/*--------- Header ---------*/
+/* ---------------------|
+|         Header        |
+|--------------------- */
+.chandung {
+    width: 100%;
+}
 
-/* Navbar */
+/* --- Navbar --- */
 .navbar {
     height: var(--navbar-h);
     display: flex;
@@ -73,21 +84,80 @@ body {
     align-items: center;
 }
 
+.navbar .logo {
+    height: 100%;
+    padding: 0.5rem;
+}
+
 .navbar .logo img {
     width: auto;
-    height: calc(var(--navbar-h) - 12px);
+    height: 100%;
 }
 
 .navbar ul {
-    display: flex;
+    display: none;
     column-gap: 2rem;
     align-items: center;
 
     li a {
-
         display: flex;
         column-gap: .25rem;
         align-items: center;
+    }
+}
 
+.toggle-mobile-menu {
+    display: grid;
+    place-items: center;
+    width: var(--navbar-h);
+    height: var(--navbar-h);
+}
+
+/* ---------------------|
+|         Contnt        |
+|--------------------- */
+.section-title {
+    font-size: var(--section-title-fs);
+    color: var(--color-base-content);
+}
+
+.lists-software {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lists-software .software {
+
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+    width: 120px;
+    height: 120px;
+
+    img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+}
+
+
+/* ---------------------|
+|         Media         |
+|--------------------- */
+
+@media (min-width: 640px) {
+    .chandung {
+        width: 50%;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .toggle-mobile-menu {
+        display: none;
     }
 }
