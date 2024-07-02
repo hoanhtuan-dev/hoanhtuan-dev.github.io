@@ -14,8 +14,8 @@
     --color-neutral: #15030a;
     --color-neutral-content: #cbc5c7;
     --color-base-100: hsla(41, 20%, 16%, 1);
-    --color-base-200: hsla(43, 21%, 13%, 1);
-    --color-base-300: hsla(40, 22%, 11%, 1);
+    --color-base-200: hsla(43, 21%, 11%, 1);
+    --color-base-300: hsla(40, 22%, 9%, 1);
     --color-base-content: #d1d0cd;
     --color-info: #00a8ff;
     --color-info-content: #000a16;
@@ -53,7 +53,8 @@
 :root {
     --navbar-h: 70px;
     --nav-list-w: 90px;
-    --section-title-fs: 2.5rem;
+    --section-title-mb-fs: 2.15rem;
+    --section-title-tl-fs: 2.55rem;
     --section-title-fw: 600;
 }
 
@@ -117,8 +118,10 @@ body {
 |         Contnt        |
 |--------------------- */
 .section-title {
-    font-size: var(--section-title-fs);
+    font-size: var(--section-title-mb-fs);
     color: var(--color-base-content);
+    word-spacing: .25rem;
+    font-weight: 600;
 }
 
 .lists-software {
@@ -130,9 +133,9 @@ body {
 .lists-software .software {
 
     border-radius: 1rem;
-    background-color: var(--color-secondary);
-    width: 120px;
-    height: 120px;
+    background-color: var(--color-base-200);
+    width: 64px;
+    height: 64px;
 
     img {
 
@@ -142,7 +145,6 @@ body {
         border-radius: 1rem;
     }
 }
-
 
 /* ---------------------|
 |         Media         |
@@ -159,5 +161,9 @@ body {
 
     .toggle-mobile-menu {
         display: none;
+    }
+
+    .section-title {
+        font-size: var(--section-title-tl-fs);
     }
 }
