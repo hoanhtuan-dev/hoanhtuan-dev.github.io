@@ -13,8 +13,16 @@ html {
   /* Change default typefaces here */
   font-family: var(--open-san-font);
   font-weight: 400;
-  font-size: 137.5%;
+  font-size: 115%;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 768px) {
+
+  html {
+    font-size: 125%;
+  }
+
 }
 
 /* Copy & Lists */
@@ -60,22 +68,23 @@ h6 {
   /* margin-top: 1.5rem; */
   /* margin-bottom: 0; */
   line-height: 1.5rem;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: 4.242rem;
-  line-height: 4.5rem;
+  font-size: 1.375rem;
+  line-height: 1.25rem;
   /* margin-top: 3rem; */
 }
 
 h2 {
-  font-size: 2.828rem;
-  line-height: 3rem;
+  font-size: 1.325rem;
+  line-height: 1.2rem;
   /* margin-top: 3rem; */
 }
 
 h3 {
-  font-size: 1.414rem;
+  font-size: 1.25rem;
 }
 
 h4 {
