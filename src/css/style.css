@@ -5,57 +5,59 @@
 @import url(components.css);
 
 :root[data-theme="dark"] {
-    --color-primary: hsla(317, 100%, 50%, 1);
-    --color-primary-content: #120016;
-    --color-secondary: hsla(120, 100%, 38%, 1);
-    --color-secondary-content: #000e00;
-    --color-accent: #008500;
-    --color-accent-content: #d3e7d1;
-    --color-neutral: #15030a;
-    --color-neutral-content: #cbc5c7;
-    --color-base-100: hsla(41, 20%, 16%, 1);
-    --color-base-200: hsla(43, 21%, 11%, 1);
-    --color-base-300: hsla(40, 22%, 9%, 1);
-    --color-base-content: #d1d0cd;
-    --color-info: #00a8ff;
-    --color-info-content: #000a16;
-    --color-success: #00c876;
-    --color-success-content: #000f05;
-    --color-warning: #a88700;
-    --color-warning-content: #0a0600;
-    --color-error: #ff4d56;
-    --color-error-content: #160202;
+    --co-primary: hsla(317, 100%, 50%, 1);
+    --co-primary-content: #120016;
+    --co-secondary: hsla(120, 100%, 38%, 1);
+    --co-secondary-content: #000e00;
+    --co-accent: #008500;
+    --co-accent-content: #d3e7d1;
+    --co-neutral: #15030a;
+    --co-neutral-content: #cbc5c7;
+    --co-bg-200: hsla(41, 20%, 16%, 1);
+    --co-bg-100: hsla(43, 21%, 11%, 1);
+    --co-bg: hsla(40, 22%, 9%, 1);
+    --co-bg-o-50: hsla(40, 22%, 9%, .5);
+    --co-bg-content: #d1d0cd;
+    --co-info: #00a8ff;
+    --co-info-content: #000a16;
+    --co-success: #00c876;
+    --co-success-content: #000f05;
+    --co-warning: #a88700;
+    --co-warning-content: #0a0600;
+    --co-error: #ff4d56;
+    --co-error-content: #160202;
 }
 
 :root[data-theme="light"] {
-    --color-primary: hsla(317, 100%, 50%, 1);
-    --color-primary-content: #16000c;
-    --color-secondary: hsla(120, 100%, 38%, 1);
-    --color-secondary-content: #001601;
-    --color-accent: #7f3700;
-    --color-accent-content: #e7d5cc;
-    --color-neutral: #090b0f;
-    --color-neutral-content: #c6c7c8;
-    --color-base-100: #e4ffff;
-    --color-base-200: #c6dede;
-    --color-base-300: #a9bebe;
-    --color-base-content: #121616;
-    --color-info: #00cbea;
-    --color-info-content: #000f13;
-    --color-success: #008637;
-    --color-success-content: #d3e7d6;
-    --color-warning: #fdb600;
-    --color-warning-content: #160c00;
-    --color-error: #ff3063;
-    --color-error-content: #160103;
+    --co-primary: hsl(317 100% 50%);
+    --co-primary-content: hsl(327 100% 4%);
+    --co-secondary: hsl(120 100% 38%);
+    --co-secondary-content: #001601;
+    --co-accent: #7f3700;
+    --co-accent-content: #e7d5cc;
+    --co-neutral: #090b0f;
+    --co-neutral-content: #c6c7c8;
+    --co-bg: hsl(180 100% 95%);
+    --co-bg-o-50: hsla(180, 100%, 95%, .5);
+    --co-bg-content: hsl(180 10% 8%);
+    --co-bg-100: hsl(180 27% 82%);
+    --co-bg-200: hsl(180 14% 70%);
+    --co-info: #00cbea;
+    --co-info-content: #000f13;
+    --co-success: #008637;
+    --co-success-content: #d3e7d6;
+    --co-warning: #fdb600;
+    --co-warning-content: #160c00;
+    --co-error: #ff3063;
+    --co-error-content: #160103;
 }
 
 :root {
-    --navbar-h: 70px;
-    --nav-list-w: 90px;
     --section-title-mb-fs: 1.25rem;
     --section-title-tl-fs: 2.025rem;
     --section-title-fw: 700;
+    --nav-list-w: 90px;
+    --navbar-h: 70px;
 }
 
 /* ---------------------|
@@ -66,23 +68,28 @@
 |         Body          |
 |--------------------- */
 body {
-    background-color: var(--color-base-100);
-    color: var(--color-base-content);
+    background-color: var(--co-bg);
+    color: var(--co-bg-content);
 }
 
 /* ---------------------|
 |         Header        |
 |--------------------- */
-.chandung {
+
+header {
+    background-color: var(--co-bg-o-50);
+    position: fixed;
     width: 100%;
+    left: 0;
+    top: 0;
 }
 
 /* --- Navbar --- */
 .navbar {
-    height: var(--navbar-h);
-    display: flex;
     justify-content: space-between;
+    height: var(--navbar-h);
     align-items: center;
+    display: flex;
 }
 
 .navbar .logo {
@@ -108,21 +115,68 @@ body {
 }
 
 .toggle-mobile-menu {
-    display: grid;
-    place-items: center;
     width: var(--navbar-h);
     height: var(--navbar-h);
+    place-items: center;
+    display: grid;
 }
 
 /* ---------------------|
-|         Contnt        |
+|          Hero         |
 |--------------------- */
+
+.hero {
+    min-height: 100vh;
+    padding-top: var(--navbar-h);
+}
+
+.hero-content {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* display: flex; */
+}
+
+.hero-container .chan-dung {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* display: flex; */
+    height: 260px;
+
+    img {
+        object-position: center;
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+    }
+}
+
+.hero-content h2 {
+    color: var(--co-primary);
+    text-transform: uppercase;
+    padding-top: .75rem;
+    font-size: 1.75rem;
+
+    span {
+        color: var(--co-secondary);
+    }
+
+}
+
+.hero-content p {
+    padding-top: .5rem;
+    display: flex;
+}
+
+.sothich-phanmem {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
 .section-title {
     font-size: var(--section-title-mb-fs);
-    color: var(--color-base-content);
-    word-spacing: .25rem;
-    font-weight: 600;
+    color: var(--co-bg-content);
 }
+
 
 .lists-software {
     justify-content: center;
@@ -135,7 +189,7 @@ body {
 
 .lists-software .software {
 
-    background-color: var(--color-base-200);
+    background-color: var(--co-bg-200);
     border-radius: 1rem;
     height: 64px;
     width: 64px;
