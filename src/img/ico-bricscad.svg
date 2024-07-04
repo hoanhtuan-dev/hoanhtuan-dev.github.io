@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="392"
+   height="392"
+   viewBox="0 0 392 392"
+   fill="none"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="ico-bricscad.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.99372531"
+     inkscape:cx="195.22498"
+     inkscape:cy="122.26719"
+     inkscape:window-width="1334"
+     inkscape:window-height="736"
+     inkscape:window-x="32"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <rect
+     x="0"
+     y="0"
+     width="392"
+     height="392"
+     rx="0"
+     fill="#114d9a"
+     id="rect1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 144.5,299 H 84.4165 L 187.856,140.595 154.48,93 h 63.235 l 32.499,47.595 z m 128.75,0 h -64.375 l 35.731,-50.792 -31.439,-43.625 h 64.375 l 28.859,43.625 z"
+     fill="#ffffff"
+     id="path1" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="paint0_linear_124_916"
+       x1="0"
+       y1="0"
+       x2="412"
+       y2="412"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0.114583"
+         stop-color="#4093FF"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#1BFDC8"
+         id="stop3" />
+    </linearGradient>
+  </defs>
+</svg>
