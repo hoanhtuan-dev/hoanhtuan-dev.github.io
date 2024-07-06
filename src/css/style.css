@@ -16,8 +16,11 @@
     --co-bg-200: hsla(41, 20%, 16%, 1);
     --co-bg-100: hsla(43, 21%, 11%, 1);
     --co-bg: hsla(40, 22%, 9%, 1);
-    --co-bg-o-50: hsla(40, 22%, 9%, .5);
-    --co-bg-content: #d1d0cd;
+    --co-bg-o-50: hsla(40, 22%, 9%, 0.5);
+    --co-bg-o-70: hsla(40, 22%, 9%, 0.7);
+    --co-bg-content: hsl(45 4% 81%);
+    --co-bg-content-o-50: hsla(45, 4%, 81%, 0.5);
+    --co-bg-content-o-70: hsla(45, 4%, 81%, 0.7);
     --co-info: #00a8ff;
     --co-info-content: #000a16;
     --co-success: #00c876;
@@ -35,10 +38,13 @@
     --co-accent: #7f3700;
     --co-accent-content: #e7d5cc;
     --co-neutral: #090b0f;
-    --co-neutral-content: #c6c7c8;
+    --co-neutral-content: hsl(210 2% 78%);
     --co-bg: hsl(180 100% 95%);
-    --co-bg-o-50: hsla(180, 100%, 95%, .5);
+    --co-bg-o-50: hsla(180, 100%, 95%, 0.5);
+    --co-bg-o-70: hsla(180, 100%, 95%, 0.7);
     --co-bg-content: hsl(180 10% 8%);
+    --co-bg-content-o-50: hsla(180, 10%, 8%, 0.5);
+    --co-bg-content-o-70: hsla(180, 10%, 8%, 0.7);
     --co-bg-100: hsl(180 27% 82%);
     --co-bg-200: hsl(180 14% 70%);
     --co-info: #00cbea;
@@ -172,11 +178,13 @@ header {
         font-size: .85rem;
     }
 }
-
 h4.sub-title {
     text-transform: uppercase;
     font-size: 1.05rem;   
     font-weight: 600;
+}
+h4.dam-nhiem {
+    margin: 1rem 0;
 }
 .quan-diem {
     h4.phan-mem-do-hoa {
@@ -194,16 +202,22 @@ h4.sub-title {
        }
     }
 }
-
+.cong-viec {
+    margin-top: 1rem;
+}
 .cv-imgs {
     flex-direction: column;
     display: flex;
     gap: 2rem 0;
 }
-.cv-imgs .img {
+figure.img {
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: .75rem;
     display: flex;
+}
+figure.img figcaption {
+    color: var(--co-bg-content-o-70);
+    text-align: center;
 }
 .cv-imgs .img a {
     border: 1px solid var(--co-bg-200);
@@ -221,11 +235,15 @@ h4.sub-title {
 /* ---------------------|
 |         About         |
 |--------------------- */
+ul.nv-trong-du-an,
 ul.tu-gioi-thieu {
     list-style-type: disc;
     list-style-position: inside;
     li {
         margin-top: .75rem;
+    }
+    li:first-child {
+        margin-top: 0;
     }
 }
 /* ---------------------|
