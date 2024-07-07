@@ -1,9 +1,13 @@
 :root {
-  --container-pd-x : 1.25rem;
+  --container-pd-x : 1.35rem;
   --scrollbar-w : 0.5rem;
 }
 
 /* C */
+.container {
+  padding-left: var(--container-pd-x);
+  padding-right: var(--container-pd-x);
+}
 
 /* M */
 .mx-auto { margin-left: auto; margin-right: auto; }

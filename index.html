@@ -20,17 +20,27 @@
         </a>
         <ul class="lists">
           <li class="list">
-            <a href="#">
-              <span class="icon">
-                <i class="ri-home-4-line"></i>
-              </span>
-              <span class="text">Trang chính</span>
+            <a href="#phan-mem" class="">
+              <span class="icon"><i class="ri-apps-2-add-line"></i></span>
+              <span class="text">Phần mềm</span>
             </a>
           </li>
           <li class="list">
-            <a href="#">
+            <a href="#quan-diem" class="">
+              <span class="icon"><i class="ri-lightbulb-flash-line"></i></span>
+              <span class="text">Quan điểm</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#gioi-thieu">
               <span class="icon"><i class="ri-user-line"></i></span>
               <span class="text">Giới Thiệu</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#cong-viec" class="">
+              <span class="icon"><i class="ri-award-line"></i></span>
+              <span class="text">Công việc</span>
             </a>
           </li>
         </ul>
@@ -50,7 +60,7 @@
         </div>
       </div>
       <!-- Sở thích phần mềm -->
-      <div class="sothich-phanmem">
+      <div class="sothich-phanmem" id="phan-mem">
         <h2 class="section-title"><i class="ri-apps-2-add-line"></i>Phần mềm</h2>
         <div class="lists-software">
           <div class="software"> <img src="./src/img/ico-neovim.png" alt="">
@@ -78,7 +88,7 @@
         </div>
       </div>
       <!-- Sở thích công nghệ -->
-      <div class="sothich-congnghe">
+      <div class="sothich-congnghe" id="cong-nghe">
         <h2 class="section-title"><i class="ri-award-line"></i>Công nghệ ưa thích</h2>
         <div class="lists-software">
           <div class="software"> <img src="./src/img/ico-github.svg" alt="">
@@ -111,7 +121,7 @@
           </div>
         </div>
     </section>
-    <section class="quan-diem container mx-auto">
+    <section class="quan-diem container mx-auto" id="quan-diem">
       <h2 class="section-title"><i class="ri-lightbulb-flash-line"></i>Quan điểm</h2>
       <h4 class="sub-title trinh-soan-thao">Trình soạn thảo:</h4>
       <p>Mặc dù có khả năng sử dụng <b>Vs Code</b> để viết code, nhưng vì tình yêu với chế độ <b>Vim Mode</b> đã làm tôi
@@ -130,7 +140,7 @@
         tiện, Layout web, thậm chí là viết kịch bản Animation... Giờ đây tôi cảm thấy rất hạnh phúc với mấy em nó.
       </p>
     </section>
-    <section class="aboute container mx-auto">
+    <section class="aboute container mx-auto" id="gioi-thieu">
       <h2 class="section-title"><i class="ri-profile-line"></i>Tự giới thiệu</h2>
       <ul class="tu-gioi-thieu">
         <li>Họ Tên: Hồ Anh Tuấn</li>
@@ -145,7 +155,7 @@
         <li>Github page: https://tuanhodev.github.io</li>
       </ul>
     </section>
-    <section class="cong-viec-da-lam container mx-auto">
+    <section class="cong-viec-da-lam container mx-auto" id="cong-viec">
       <h2 class="section-title"><i class="ri-award-line"></i>Công việc</h2>
       <div class="cong-viec-container">
         <h4 class="sub-title">Trillfa.shop</h4>
@@ -197,6 +207,23 @@
         </div>
       </div>
     </footer>
+    <div class="float-navbar">
+      <nav>
+        <a href="#phan-mem" class="">
+          <i class="ri-apps-2-add-line ri-lg"></i>
+        </a>
+        <a href="#quan-diem" class="">
+          <i class="ri-lightbulb-flash-line ri-lg"></i>
+        </a>
+        <a href="#gioi-thieu">
+          <i class="ri-user-line ri-lg"></i>
+        </a>
+        <a href="#cong-viec" class="">
+          <i class="ri-award-line ri-lg"></i>
+        </a>
+      </nav>
+    </div>
+
   </div>
 </body>
 

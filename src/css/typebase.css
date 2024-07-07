@@ -1,42 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-
   --open-san-font: "Open Sans", sans-serif;
-
   --roboto-font: "Roboto", sans-serif;
 }
-
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
 html {
   /* Change default typefaces here */
   font-family: var(--open-san-font);
-  font-weight: 400;
-  font-size: 105%;
-  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-size: 95.5%;
 }
 
 @media (min-width: 768px) {
-
   html {
-    font-size: 125%;
+    font-size: 115%;
   }
-
 }
-
 /* Copy & Lists */
 p {
   line-height: 1.5rem;
-  /* margin-top: 1.5rem; */
-  /* margin-bottom: 0; */
 }
-
-/* ul, */
-/* ol { */
-/*   margin-top: 1.5rem; */
-/*   margin-bottom: 1.5rem; */
-/* } */
 ul li,
 ol li {
   line-height: 1.5rem;
