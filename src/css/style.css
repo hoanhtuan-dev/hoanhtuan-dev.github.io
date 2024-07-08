@@ -60,17 +60,17 @@
 
 :root {
     --linear-gd-x: linear-gradient(90deg, var(--co-bg), var(--co-bg-200), var(--co-bg));
-    --bs-secondary: 0px 0px 12px 5px var(--co-secondary);
-    --bs-primary: 0px 0px 12px 5px var(--co-primary);
-    --bs-success: 0px 0px 12px 5px var(--co-success);
-    --bs-accent: 0px 0px 12px 5px var(--co-accent);
+    --bs-secondary: 0px 0px 10px 2px var(--co-secondary);
+    --bs-primary: 0px 0px 10px 2px var(--co-primary);
+    --bs-success: 0px 0px 10px 2px var(--co-success);
+    --bs-accent: 0px 0px 10px 2px var(--co-accent);
     --bs-black: 10px 6px 10px 0px hsl(0 0% 0% / 50%);
     --section-title-mb-fs: 1.35rem;
     --section-title-tl-fs: 1.5rem;
     --section-title-fw: 700;
     --pd-container: 1rem;
     --nav-list-w: 90px;
-    --navbar-h: 70px;
+    --navbar-h: 54px;
     --br-base: 1rem;
 }
 
