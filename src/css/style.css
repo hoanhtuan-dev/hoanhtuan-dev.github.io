@@ -561,7 +561,7 @@ footer .copyright {
 /* ---------------------|
 |         Media         |
 |--------------------- */
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
     .hero-container {
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -578,18 +578,25 @@ footer .copyright {
     }
 
     .navbar ul {
+        overflow: visible;
         background-color: transparent;
         flex-direction: row;
         align-items: center;
         box-shadow: none;
         position: static;
         column-gap: 2rem;
+        display: flex;
         height: 100%;
         width: auto;
 
         li {
             height: var(--navbar-h);
         }
+    }
+
+    .nav-ul-hidden {
+        max-height: 100%;
+        opacity: 100;
     }
 
     .toggle-mobile-menu {
