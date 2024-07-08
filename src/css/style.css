@@ -512,7 +512,7 @@ footer .copyright {
 /* ---------------------|
 |         Media         |
 |--------------------- */
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     .hero-container {
         justify-content: space-between;
         flex-direction: row-reverse;
