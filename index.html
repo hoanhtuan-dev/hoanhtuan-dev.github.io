@@ -7,10 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./src/remixicon/remixicon.css" rel="stylesheet">
   <link href="./src/css/style.css" rel="stylesheet">
+  <script type="module" src="src/js/app.js">
+
+  </script>
 </head>
 
 <body>
-  <div class="app">
+  <div class="app" id="app">
     <!-- Header -->
     <header class="header">
       <div class="navbar container mx-auto">
@@ -18,7 +21,8 @@
           <img src="src/img/avatar.png" alt="">
           Anh Tuấn Dev
         </a>
-        <ul class="lists">
+        <ul id="navbar-menu" class="lists">
+          <div id="navUlBg" class="navUlBg"></div>
           <li class="list">
             <a href="#phan-mem" class="">
               <span class="icon"><i class="ri-apps-2-add-line"></i></span>
@@ -45,7 +49,7 @@
           </li>
         </ul>
         <!-- Nút bật tắt mobile menu -->
-        <button class="toggle-mobile-menu"><i class="ri-menu-line ri-xl"></i></button>
+        <button id="toggle-mobile-menu" class="toggle-mobile-menu"><i class="ri-menu-line ri-xl"></i></button>
       </div>
     </header>
     <section class="hero container mx-auto">
@@ -229,6 +233,7 @@
     </div>
 
   </div>
+
 </body>
 
 </html>
