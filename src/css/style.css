@@ -14,13 +14,13 @@
     --co-neutral: #15030a;
     --co-neutral-content: #cbc5c7;
     --co-bg-200: hsla(41, 20%, 16%, 1);
+    --co-bg-200-o-50: hsla(41, 20%, 16%, 0.5);
+    --co-bg-200-o-70: hsla(41, 20%, 16%, 0.7);
     --co-bg-100: hsla(43, 21%, 11%, 1);
     --co-bg: hsla(40, 22%, 9%, 1);
     --co-bg-o-50: hsla(40, 22%, 9%, 0.5);
     --co-bg-o-70: hsla(40, 22%, 9%, 0.7);
     --co-bg-content: hsl(45 4% 81%);
-    --co-bg-content-o-50: hsla(45, 4%, 81%, 0.5);
-    --co-bg-content-o-70: hsla(45, 4%, 81%, 0.7);
     --co-info: #00a8ff;
     --co-info-content: #000a16;
     --co-success: #00c876;
@@ -44,10 +44,10 @@
     --co-bg-o-50: hsla(180, 100%, 95%, 0.5);
     --co-bg-o-70: hsla(180, 100%, 95%, 0.7);
     --co-bg-content: hsl(180 10% 8%);
-    --co-bg-content-o-50: hsla(180, 10%, 8%, 0.5);
-    --co-bg-content-o-70: hsla(180, 10%, 8%, 0.7);
-    --co-bg-100: hsl(180 27% 82%);
-    --co-bg-200: hsl(180 14% 70%);
+    --co-bg-100: hsla(180, 27%, 82%, 1);
+    --co-bg-200: hsla(180, 14%, 70%, 1);
+    --co-bg-200-o-50: hsla(180, 14%, 70%, 0.5);
+    --co-bg-200-o-70: hsla(180, 14%, 70%, 0.7);
     --co-info: #00cbea;
     --co-info-content: #000f13;
     --co-success: #008637;
@@ -64,6 +64,7 @@
     --bs-primary: 0px 0px 12px 5px var(--co-primary);
     --bs-success: 0px 0px 12px 5px var(--co-success);
     --bs-accent: 0px 0px 12px 5px var(--co-accent);
+    --bs-black: 10px 6px 10px 0px hsl(0 0% 0% / 50%);
     --section-title-mb-fs: 1.35rem;
     --section-title-tl-fs: 1.5rem;
     --section-title-fw: 700;
@@ -87,9 +88,20 @@ body {
 /* ---------------------|
 |         Header        |
 |--------------------- */
-header {
-    background-color: var(--co-bg-o-50);
+header::before {
+    background-color: var(--co-bg-o-70);
     backdrop-filter: blur(15px);
+    position: absolute;
+    display: flex;
+    content: '';
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+header {
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -119,7 +131,6 @@ header {
 .navbar .logo:hover {
     transition: color .3s ease-out;
     color: var(--co-secondary);
-    backdrop-filter: blur(10%);
 }
 
 .navbar .logo img {
@@ -128,10 +139,16 @@ header {
 }
 
 .navbar ul {
-    align-items: center;
-    column-gap: 2rem;
-    display: none;
-    height: 100%;
+    background-color: var(--co-bg-200-o-70);
+    backdrop-filter: blur(15px);
+    box-shadow: var(--bs-black);
+    /* display: none; */
+    padding: var(--pd-container);
+    top: var(--navbar-h);
+    position: absolute;
+    z-index: 998;
+    width: 100%;
+    left: 0;
 
     li {
         height: 100%;
@@ -529,7 +546,10 @@ footer .copyright {
     }
 
     .navbar ul {
+        align-items: center;
+        column-gap: 2rem;
         display: flex;
+        height: 100%;
     }
 
     .toggle-mobile-menu {
