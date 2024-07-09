@@ -405,8 +405,8 @@ ul.tu-gioi-thieu {
 }
 
 ul.tu-gioi-thieu {
-    background-color: var(--co-success);
-    color: var(--co-success-content);
+    background-color: var(--co-secondary);
+    color: var(--co-secondary-content);
     border-radius: var(--br-base);
     padding: var(--pd-container);
 }
